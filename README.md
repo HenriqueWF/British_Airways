@@ -1,3 +1,5 @@
+Documento sujeito a alterações.
+
 ![British_Airways](https://logosmarcas.net/wp-content/uploads/2021/02/British-Airways-Logo.png)
 ### Sobre o problema
 
@@ -37,7 +39,7 @@ apresentação para a equipe de negócio.
 
 Os dados incluem:
 
-Dados de feedback do cliente: dados obtidos através de scrapping. PAY ATTENTION
+Dados de feedback do cliente: dados obtidos através de scrapping.
 
 Dados de booking de voos: dados de compras de passagens, como dia, canal de 
 vendas, horário do voo, etc.
