@@ -23,14 +23,16 @@ ser proativas para adquirir clientes antes de embarcarem em suas férias.
 
 ### Questão de Negócio
 
-A primeira tarefa é focada em raspar e coletar feedback do cliente e 
-revisar dados de uma fonte de terceiros e analisar esses dados para apresentar 
-quaisquer insights.
+A primeira tarefa é focada em raspar e coletar feedback do cliente e revisar 
+dados de uma fonte de terceiros e analisar esses dados para apresentar quaisquer
+ insights.
 
 Já a segunda tarefa consiste em usar os dados fornecidos para criar um modelo
 preditivo com o intuito de identificar os cliente com uma maior propensão de 
-compra de passagens. Além disso, é de interesse da área de negócio entender 
-quais variáveis mais impactam na probabilidade de compra.
+compra de passagens. A equipe de negócio pretende oferecer um desconto de 12%
+para tentar realizar a venda de bilhetes aéreos. Além disso, também é de 
+interesse dessa área entender quais variáveis mais impactam na probabilidade de 
+compra.
 
 Por último, é necessário que os achados sejam resumidos em slides para uma
 apresentação para a equipe de negócio.
@@ -45,6 +47,9 @@ Dados de booking de voos: dados de compras de passagens, como dia, canal de
 vendas, horário do voo, etc.
 
 ### Métricas de avaliação
+
+Para o modelo em questão, a **AUC-Curve** será métrica de avaliação, pois vai
+medir a capacidade do modelo de distinguir entre compradores e não compradores.
 
 ### Melhorias
 
