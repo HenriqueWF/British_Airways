@@ -1,6 +1,5 @@
-Documento sujeito a alterações.
-
 ![British_Airways](https://logosmarcas.net/wp-content/uploads/2021/02/British-Airways-Logo.png)
+
 ### Sobre o problema
 
 A British Airways(BA) é uma companhia aérea do Reino Unido.  Todos os dias, 
@@ -25,12 +24,11 @@ ser proativas para adquirir clientes antes de embarcarem em suas férias.
 
 A primeira tarefa é focada em raspar e coletar feedback do cliente e revisar 
 dados de uma fonte de terceiros e analisar esses dados para apresentar quaisquer
- insights.
+insights.
 
 Já a segunda tarefa consiste em usar os dados fornecidos para criar um modelo
-preditivo com o intuito de identificar os cliente com uma maior propensão de 
-compra de passagens. A equipe de negócio pretende oferecer um desconto de 12%
-para tentar realizar a venda de bilhetes aéreos. Além disso, também é de 
+preditivo com o intuito de identificar os clientes com uma maior probabilidade 
+de comprar um pacote de férias com a British Airways. Além disso, também é de 
 interesse dessa área entender quais variáveis mais impactam na probabilidade de 
 compra.
 
@@ -41,20 +39,44 @@ apresentação para a equipe de negócio.
 
 Os dados incluem:
 
-Dados de feedback do cliente: dados obtidos através de scrapping.
+reviews_data: dados obtidos através de scrapping em um site de
+avaliações. Os dados contém informações sobre a avaliação, como título, texto de
+avaliação, tipo de viagem, tipo de assento, etc.
 
-Dados de booking de voos: dados de compras de passagens, como dia, canal de 
-vendas, horário do voo, etc.
+customer_booking: dados de compras de passagens, como dia, canal de vendas, 
+horário do voo, etc.
 
 ### Métricas de avaliação
 
-Para o modelo em questão, a **AUC-Curve** será métrica de avaliação, pois vai
-medir a capacidade do modelo de distinguir entre compradores e não compradores.
+Para o modelo em questão, a **Log Loss** será métrica de avaliação principal,
+pois é uma métrica que penaliza mais os erros de classificação mais graves, e 
+como o objetivo é identificar os clientes com maior probabilidade de compra,
+erros graves podem ser prejudiciais para o negócio.
 
 ### Melhorias
 
+[⌛] Reduzir a Log Loss do modelo.
+
 ### Instruções para execução do projeto
 
+Siga os seguintes passos para rodar o projeto localmente:
+
+1. Clone o repositório:
+```sh
+git clone https://github.com/HenriqueWF/British_Airways
+```
+2. Crie um ambiente virtual:
+```sh
+python -m venv venv
+```
+3. Ative o ambiente virtual de acordo com o seu sistema operacional.
+
+4. Instale as dependências:
+```sh
+pip install -r requirements.txt
+```
+
 ### Descrição dos arquivos
+
 
 ### Resultados
