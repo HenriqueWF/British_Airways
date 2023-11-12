@@ -20,7 +20,7 @@ que um cliente compre seus voos ou férias quando eles entram no aeroporto, voc�
 já perdeu! Ser reativo nessa situação não é o ideal; as companhias aéreas devem 
 ser proativas para adquirir clientes antes de embarcarem em suas férias.
 
-### Questão de Negócio
+### Objetivo
 
 A primeira tarefa é focada em raspar e coletar feedback do cliente e revisar 
 dados de uma fonte de terceiros e analisar esses dados para apresentar quaisquer
