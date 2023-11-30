@@ -114,7 +114,7 @@ Como resultado da primeira tarefa, insights como os seguintes foram obtidos:
 
 Confira mais insights no notebook ```EDA_British_Airways.ipynb```. Além disso, 
 também foi criado um dashboard com o intuito de facilitar a visualização dos
-dados. Para acessá-lo, basta clicar [aqui](https://app.powerbi.com/view?r=eyJrIjoiODkxNmRiMTktMjI3MC00MTRiLTkxNjMtNTA3YTZjYjI3NTQ1IiwidCI6ImM5YWFjMGZmLWQ1Y2MtNDRhMi05NjIyLWNkMmVlZmQ5Zjk4MiJ9)
+dados. Para acessá-lo, basta clicar [aqui](https://app.powerbi.com/view?r=eyJrIjoiODkxNmRiMTktMjI3MC00MTRiLTkxNjMtNTA3YTZjYjI3NTQ1IiwidCI6ImM5YWFjMGZmLWQ1Y2MtNDRhMi05NjIyLWNkMmVlZmQ5Zjk4MiJ9).
 
 Já para a segunda tarefa, o modelo final obteve uma Log Loss de 0.36, o que
 significa que o modelo tem uma boa capacidade de classificar os clientes com
@@ -122,4 +122,5 @@ maior probabilidade de compra. Em conjunto com o desenvolvimento do modelo, foi
 realizado uma análise inferencial para entender quais variáveis mais impactam na
 probabilidade de compra. Os resultados dessa análise foram combinados com os
 scores gerados pelo modelo para criar um plano de ação para a equipe de negócio.
+<br>
 ![plano de ação](/images/Plano_Acao.png)
