@@ -49,7 +49,7 @@ horário do voo, etc.
 ### Métricas de avaliação
 
 Para o modelo em questão, a **Log Loss** será métrica de avaliação principal,
-pois é uma métrica que penaliza mais os erros de classificação mais graves, e 
+pois é uma métrica que penaliza mais os erros de classificação mais graves, e
 como o objetivo é identificar os clientes com maior probabilidade de compra,
 erros graves podem ser prejudiciais para o negócio.
 
@@ -75,8 +75,52 @@ python -m venv venv
 ```sh
 pip install -r requirements.txt
 ```
+5. Selecione o notebook de interesse e execute as células.
 
 ### Descrição dos arquivos
 
+    - data
+    |- processed
+    | |- customer_booking_processed.csv  # Arquivo contendo dados processados sobre as compras de passagens 
+    |- raw
+    | |- customer_booking.csv  # Arquivo contendo dados sobre as compras de passagens
+    | |- reviews_data.csv  # Arquivo contendo dados sobre avaliações obtidas através de scrapping
+    |
+    - images
+    |- Arquitetura_Deploy_Modelo_Propensao.png  # Imagem contendo a arquitetura pensada para o deploy do modelo
+    |- Plano_Acao.png  # Plano de ação para o uso dos scores gerados pelo modelo
+    |
+    - models
+    |- calibrador_final.pkl  # Calibrador para ser usado em conjunto com o modelo final
+    |- modelo_final.pkl  # Modelo final
+    |
+    - notebooks
+    |- booking_modelling.ipynb  # Notebook contendo a etapa de modelagem dos dados e dos experimentos
+    |- EDA_British_Airways.ipynb  # Notebook contendo a etapa de análise exploratória dos dados
+    |- web_scrapping_code.ipynb  # Notebook contendo toda a etapa de scrapping dos dados
+    |
+    - README.md  # Arquivo contendo informações do projeto
+    - requirements.txt # Arquivo contendo as dependências do projeto
 
 ### Resultados
+
+Como resultado da primeira tarefa, insights como os seguintes foram obtidos:
+
+- Há passageiros de 71 países diferentes.
+- Há 198 modelos de aeronaves.  
+- Os passageiros voaram por 1529 rotas diferentes.
+- Há 4 tipos diferentes de assentos.
+- Há 4 modalidades diferentes de viajantes.
+
+Confira mais insights no notebook ```EDA_British_Airways.ipynb```. Além disso, 
+também foi criado um dashboard com o intuito de facilitar a visualização dos
+dados. Para acessá-lo, basta clicar [aqui](https://app.powerbi.com/view?r=eyJrIjoiODkxNmRiMTktMjI3MC00MTRiLTkxNjMtNTA3YTZjYjI3NTQ1IiwidCI6ImM5YWFjMGZmLWQ1Y2MtNDRhMi05NjIyLWNkMmVlZmQ5Zjk4MiJ9).
+
+Já para a segunda tarefa, o modelo final obteve uma Log Loss de 0.36, o que
+significa que o modelo tem uma boa capacidade de classificar os clientes com
+maior probabilidade de compra. Em conjunto com o desenvolvimento do modelo, foi
+realizado uma análise inferencial para entender quais variáveis mais impactam na
+probabilidade de compra. Os resultados dessa análise foram combinados com os
+scores gerados pelo modelo para criar um plano de ação para a equipe de negócio.
+<br>
+![plano de ação](/images/Plano_Acao.png)
